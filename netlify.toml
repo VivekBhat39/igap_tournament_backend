@@ -7,6 +7,9 @@
   to = "/.netlify/functions/api/:splat"
   status = 200
 
-  [functions]
+[functions]
+  node_bundler = "esbuild"
+
+[functions."api"]
   timeout = 26
 
